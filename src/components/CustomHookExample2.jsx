@@ -1,8 +1,8 @@
 import React from 'react'
-import {useState} from 'react'
+import useLocalStorage from '../hooks/useLocalStorage'
 
 function CustomHookExample2() {
-  const [task, setTask] = useState('')
+  const [task, setTask] = useLocalStorage('task', '')
 
   return (
     <form action="" className='w-25'>
