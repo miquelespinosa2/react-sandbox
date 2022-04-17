@@ -17,7 +17,7 @@ function CustomHookExample2() {
     setTasks([...tasks, taskObj])
   }
 
-
+// printing the tasks
   return (
     <>
       <form onSubmit={onSubmit} action="" className='w-25'>
@@ -29,7 +29,6 @@ function CustomHookExample2() {
       </form>
 
       <hr />
-
       {tasks.map((task) => (
         <h3 key={task.date}>{task.task}</h3>
       ))}
