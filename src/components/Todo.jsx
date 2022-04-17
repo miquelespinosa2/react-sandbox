@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState, useEffect, useRef} from 'react'
 
+
+// creating the function to fetch the data from the API
 function Todo() {
   const [loading, setLoading] = useState(true)
   const [todo, setTodo] = useState({})
