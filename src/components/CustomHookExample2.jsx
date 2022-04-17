@@ -2,6 +2,7 @@ import React from 'react'
 import useLocalStorage from '../hooks/useLocalStorage'
 
 function CustomHookExample2() {
+  // setting the tasks for the hooks
   const [task, setTask] = useLocalStorage('task', '')
   const [tasks, setTasks] = useLocalStorage('tasks', [])
 
